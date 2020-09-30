@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Informações Covid-19</title>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/2760/2760147.png">
+</head>
+<body>
+	<main id="container">
+		<h1>Informações Covid-19</h1>
+		<section id="lista">
+			<div class="names">
+				<li>🌎 Estado</li>
+				<li>🤒 Casos</li>
+				<li>⚰️ Mortes</li>
+			</div>
+			<ul v-for="item in itens">
+				<li>{{ item.uf }}</li>
+				<li>{{ item.cases }}</li>
+				<li>{{ item.deaths }}</li>
+			</ul>
+		</section>
+	</main>
+
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

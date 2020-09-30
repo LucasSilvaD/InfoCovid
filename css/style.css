@@ -1,0 +1,54 @@
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(https://uploaddeimagens.com.br/images/002/903/173/original/corona-9.jpg?1601506602);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#container h1 {
+	color: white;
+}
+
+#lista {
+	padding: 20px 50px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 3px solid black;
+	color: white;
+	border-radius: 15px;
+	margin: 5px;
+}
+
+li {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+.names li {
+	border-bottom: 1px solid gray;
+	margin: 2px;
+}
+
+#lista ul li {
+	padding: 0px 25px;
+}
+
+@media screen and (max-width: 424px) {
+	li {
+		padding: 0 2px;
+	}
+
+	#lista ul li {
+		padding: 0 10px;
+	}
+}
